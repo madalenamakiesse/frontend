@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTableList } from '@fortawesome/free-solid-svg-icons';
+import "./home.css"
 
 function Companhia() {
   const [loading, setLoading] = useState(true);
@@ -18,6 +19,7 @@ function Companhia() {
                 console.error(error);
             });
     }, []);
+  
 
     const handleDelete = (companhiaId) => {
       // Send a DELETE request to your API to delete the Avião
@@ -37,7 +39,7 @@ function Companhia() {
           <div className="row">
             <div className="col-12">
               <div class="lead m-4">
-                <Link className="btn btn-primary btn-lg" to="/aN" >
+                <Link className="btn btn-primary btn-lg" to="/aC" >
                   Adicionar
                 </Link>
               </div>
